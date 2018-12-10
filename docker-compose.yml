@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  heroku:
+    image: ${DOCKER_REGISTRY}heroku
+    build:
+      context: .
+      dockerfile: Heroku/Dockerfile
